@@ -1,20 +1,18 @@
 from pyteal import *
 
-# 121962350 APP ID
-
 def approval():
     on_creation = Seq(
         [
             # g byteslice - asset name is Bloom Token
-            App.globalPut(Bytes("AssetName"), Bytes("Bloom Token")),
+            App.globalPut(Bytes("AssetName"), Bytes("Pure NFT")),
             # g byteslice - unit name is BLT
-            App.globalPut(Bytes("UnitName"), Bytes("BLT")),
+            App.globalPut(Bytes("UnitName"), Bytes("NFP1023")),
             # g int - decimals
-            App.globalPut(Bytes("Decimals"), Int(2)),
+            App.globalPut(Bytes("Decimals"), Int(0)),
             # g Int - total supply 
-            App.globalPut(Bytes("Total"), Int(100000000)),
+            App.globalPut(Bytes("Total"), Int(1)),
             # g Int - reserve is total amount not sitting in local balance
-            App.globalPut(Bytes("GlobalReserve"), Int(100000000)),
+            App.globalPut(Bytes("GlobalReserve"), Int(1)),
             # approve sequence
             Return(Int(1)),
         ]
