@@ -155,19 +155,19 @@ app_local_get
 return
 main_l18:
 byte "AssetName"
-byte "Bloom Token"
+byte "Pure NFT"
 app_global_put
 byte "UnitName"
-byte "BLT"
+byte "NFP1023"
 app_global_put
 byte "Decimals"
 int 0
 app_global_put
 byte "Total"
-int 100000000
+int 1
 app_global_put
 byte "GlobalReserve"
-int 100000000
+int 1
 app_global_put
 int 1
 return

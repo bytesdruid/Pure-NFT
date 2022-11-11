@@ -35,7 +35,7 @@ function App() {
 
   return (
     <Container id='root DOM node'>
-      <h1 className='top-div'>Bloom Token Management Console</h1>
+      <h1 className='top-div'>Mandala Art Pure NFT Management Console</h1>
       <div>
         <div className='centered-div'>
           <Button variant="outlined" color="primary"
@@ -67,7 +67,6 @@ function App() {
           </Button>
         </div>
         <div className='centered-div'>
-          <TextField label="Mint Amount" variant="outlined"/>
           <Button variant='outlined' color="primary"
             onClick={
               () => callTwoArg('Mint', '10')
@@ -76,7 +75,6 @@ function App() {
           </Button>
         </div>
         <div className='centered-div'>
-          <TextField label="Transfer Amount" variant="outlined"/>
           <Button variant='outlined' color="primary"
             onClick={
               () => callTwoArg('Transfer', '1')
